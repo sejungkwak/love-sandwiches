@@ -1,3 +1,38 @@
+# This is a walkthrough project built by Code Institute.
+
+## Deployment
+
+1. requirements.txt / Terminal
+
+    Run `pip3 freeze > requirements.txt`
+    
+    This command will automatically add required libraries to the file.
+
+2. Login Heroku / Terminal
+
+    1. Run `heroku login -i`
+    2. Type my full email address.
+    3. Paste `API Key` from the account settings page for the password.*
+
+        *This is because I enabled the 2fac auth.
+
+3. Create app / Terminal
+
+    Run `heroku create `(**space at the end**) + the name of the app in the Terminal.
+
+4. Change settings / Heroku site
+
+    1. Buildpacks > python, node.js
+    2. Config Vars > PORT, CREDS
+
+5. Deploy / Terminal
+
+    Run `git push heroku main`
+
+<br>
+
+***
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome USER_NAME,
